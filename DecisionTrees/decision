@@ -1,0 +1,41 @@
+digraph {
+	"[Root]" [label="[Root]:0.0"]
+	"[Root]0" [label="[Root]0:1.0"]
+	"[Root]00" [label="[Root]00:1.0"]
+	"[Root]000" [label="[Root]000:1.0"]
+	"[Root]000" -> "[Root]0000"
+	"[Root]000" -> "[Root]0001"
+	"[Root]001" [label="[Root]001:1.0"]
+	"[Root]001" -> "[Root]0010"
+	"[Root]001" -> "[Root]0011"
+	"[Root]00" -> "[Root]000"
+	"[Root]00" -> "[Root]001"
+	"[Root]01" [label="[Root]01:0.0"]
+	"[Root]01" -> "[Root]010"
+	"[Root]01" -> "[Root]011"
+	"[Root]0" -> "[Root]00"
+	"[Root]0" -> "[Root]01"
+	"[Root]1" [label="[Root]1:0.0"]
+	"[Root]10" [label="[Root]10:0.0"]
+	"[Root]100" [label="[Root]100:1.0"]
+	"[Root]100" -> "[Root]1000"
+	"[Root]100" -> "[Root]1001"
+	"[Root]101" [label="[Root]101:0.0"]
+	"[Root]101" -> "[Root]1010"
+	"[Root]101" -> "[Root]1011"
+	"[Root]10" -> "[Root]100"
+	"[Root]10" -> "[Root]101"
+	"[Root]11" [label="[Root]11:0.0"]
+	"[Root]110" [label="[Root]110:0.0"]
+	"[Root]110" -> "[Root]1100"
+	"[Root]110" -> "[Root]1101"
+	"[Root]111" [label="[Root]111:0.0"]
+	"[Root]111" -> "[Root]1110"
+	"[Root]111" -> "[Root]1111"
+	"[Root]11" -> "[Root]110"
+	"[Root]11" -> "[Root]111"
+	"[Root]1" -> "[Root]10"
+	"[Root]1" -> "[Root]11"
+	"[Root]" -> "[Root]0"
+	"[Root]" -> "[Root]1"
+}

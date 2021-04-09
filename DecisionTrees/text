@@ -1,0 +1,22 @@
+0.1
+5850 52659
+Accuracy of the Single Decision Tree Model: 0.9205833760610722
+
+0.2
+11701 46808
+Accuracy of the Single Decision Tree Model: 0.9426380105964792
+
+0.3
+17552 40957
+Accuracy of the Single Decision Tree Model: 0.9558317259564909
+Time Taken: 65.6644914150238
+
+0.4
+23403 35106
+Accuracy of the Single Decision Tree Model: 0.9625135304506353
+Time Taken: 91.41152715682983
+
+0.9
+52658 5851
+Accuracy of the Single Decision Tree Model: 0.9755597333789096
+Time Taken: 309.0488476753235
