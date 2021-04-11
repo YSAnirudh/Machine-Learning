@@ -1,41 +1,46 @@
 digraph {
-	"[Root]" [label="[Root]:0.0"]
-	"[Root]0" [label="[Root]0:1.0"]
-	"[Root]00" [label="[Root]00:1.0"]
-	"[Root]000" [label="[Root]000:1.0"]
-	"[Root]000" -> "[Root]0000"
-	"[Root]000" -> "[Root]0001"
-	"[Root]001" [label="[Root]001:1.0"]
-	"[Root]001" -> "[Root]0010"
-	"[Root]001" -> "[Root]0011"
-	"[Root]00" -> "[Root]000"
-	"[Root]00" -> "[Root]001"
-	"[Root]01" [label="[Root]01:0.0"]
-	"[Root]01" -> "[Root]010"
-	"[Root]01" -> "[Root]011"
-	"[Root]0" -> "[Root]00"
-	"[Root]0" -> "[Root]01"
-	"[Root]1" [label="[Root]1:0.0"]
-	"[Root]10" [label="[Root]10:0.0"]
-	"[Root]100" [label="[Root]100:1.0"]
-	"[Root]100" -> "[Root]1000"
-	"[Root]100" -> "[Root]1001"
-	"[Root]101" [label="[Root]101:0.0"]
-	"[Root]101" -> "[Root]1010"
-	"[Root]101" -> "[Root]1011"
-	"[Root]10" -> "[Root]100"
-	"[Root]10" -> "[Root]101"
-	"[Root]11" [label="[Root]11:0.0"]
-	"[Root]110" [label="[Root]110:0.0"]
-	"[Root]110" -> "[Root]1100"
-	"[Root]110" -> "[Root]1101"
-	"[Root]111" [label="[Root]111:0.0"]
-	"[Root]111" -> "[Root]1110"
-	"[Root]111" -> "[Root]1111"
-	"[Root]11" -> "[Root]110"
-	"[Root]11" -> "[Root]111"
-	"[Root]1" -> "[Root]10"
-	"[Root]1" -> "[Root]11"
-	"[Root]" -> "[Root]0"
-	"[Root]" -> "[Root]1"
+	"[Root]" -> "[Root]0" [label="F0 <= 1.278" arrowhead=open]
+	"[Root]" -> "[Root]1" [label="F0 > 1.278" arrowhead=open]
+	"[Root]" [label="Samples=1234
+Classes={1.0: 559, 0.0: 675}
+Entropy=0.6193" fillcolor="#ff9900" shape=box style="filled,rounded"]
+	"[Root]000" [label="Class
+Predicted=1.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]001" [label="Class
+Predicted=1.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]00" -> "[Root]000" [label="F0 <= -0.0496" arrowhead=open]
+	"[Root]00" -> "[Root]001" [label="F0 > -0.0496" arrowhead=open]
+	"[Root]00" [label="Samples=563
+Classes={1.0: 494, 0.0: 69}
+Entropy=0.4346" fillcolor="#ff9900" shape=box style="filled,rounded"]
+	"[Root]010" [label="Class
+Predicted=0.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]011" [label="Class
+Predicted=0.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]01" -> "[Root]010" [label="F0 <= -3.7154" arrowhead=open]
+	"[Root]01" -> "[Root]011" [label="F0 > -3.7154" arrowhead=open]
+	"[Root]01" [label="Samples=181
+Classes={1.0: 43, 0.0: 138}
+Entropy=0.1211" fillcolor="#ff9900" shape=box style="filled,rounded"]
+	"[Root]0" -> "[Root]00" [label="F1 <= 4.9342" arrowhead=open]
+	"[Root]0" -> "[Root]01" [label="F1 > 4.9342" arrowhead=open]
+	"[Root]0" [label="Samples=744
+Classes={1.0: 537, 0.0: 207}
+Entropy=0.5985" fillcolor="#ff9900" shape=box style="filled,rounded"]
+	"[Root]100" [label="Class
+Predicted=0.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]101" [label="Class
+Predicted=0.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]10" -> "[Root]100" [label="F2 <= -0.9984" arrowhead=open]
+	"[Root]10" -> "[Root]101" [label="F2 > -0.9984" arrowhead=open]
+	"[Root]10" [label="Samples=132
+Classes={1.0: 22, 0.0: 110}
+Entropy=0.273" fillcolor="#ff9900" shape=box style="filled,rounded"]
+	"[Root]11" [label="Class
+Predicted=0.0" fillcolor="#ffff00" shape=box style="filled,rounded"]
+	"[Root]1" -> "[Root]10" [label="F0 <= 2.4018" arrowhead=open]
+	"[Root]1" -> "[Root]11" [label="F0 > 2.4018" arrowhead=open]
+	"[Root]1" [label="Samples=490
+Classes={0.0: 468, 1.0: 22}
+Entropy=0.1751" fillcolor="#ff9900" shape=box style="filled,rounded"]
 }

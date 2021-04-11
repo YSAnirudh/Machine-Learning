@@ -1,0 +1,72 @@
+digraph Tree {
+node [shape=box] ;
+35 [label="variance < 0.7651\ngini = 0.9918907278202487\nsamples = 1029\nvalue = [569, 460]"] ;
+35 -> 36
+36 [label="skewness < 5.3646\ngini = 0.7776668812766474\nsamples = 557\nvalue = [128, 429]"] ;
+36 -> 37
+37 [label="variance < -0.36205\ngini = 0.45441896185856834\nsamples = 440\nvalue = [42, 398]"] ;
+37 -> 38
+38 [label="kurtosis < 6.85355\ngini = 0.2192973081321754\nsamples = 342\nvalue = [12, 330]"] ;
+38 -> 39
+39 [label="1.0\ngini = 0.03775018517673542\nsamples = 249\nvalue = [1, 248]"] ;
+38 -> 40
+40 [label="variance < -1.70265\ngini = 0.5243952392403632\nsamples = 93\nvalue = [11, 82]"] ;
+40 -> 41
+41 [label="1.0\ngini = 0.10327508457163546\nsamples = 74\nvalue = [1, 73]"] ;
+40 -> 42
+42 [label="0.0\ngini = 0.9980008838722996\nsamples = 19\nvalue = [10, 9]"] ;
+37 -> 43
+43 [label="kurtosis < 0.75718\ngini = 0.8886466698980793\nsamples = 98\nvalue = [30, 68]"] ;
+43 -> 44
+44 [label="1.0\ngini = 0.12394986771100759\nsamples = 59\nvalue = [1, 58]"] ;
+43 -> 45
+45 [label="entropy < 0.72843\ngini = 0.8212809417449863\nsamples = 39\nvalue = [29, 10]"] ;
+45 -> 46
+46 [label="0.0\ngini = 0.35335933502142136\nsamples = 30\nvalue = [28, 2]"] ;
+45 -> 47
+47 [label="1.0\ngini = 0.5032583347756457\nsamples = 9\nvalue = [1, 8]"] ;
+36 -> 48
+48 [label="variance < -4.1864\ngini = 0.8341351937169638\nsamples = 117\nvalue = [86, 31]"] ;
+48 -> 49
+49 [label="1.0\ngini = 0.205592508185083\nsamples = 31\nvalue = [1, 30]"] ;
+48 -> 50
+50 [label="0.0\ngini = 0.09140162014739274\nsamples = 86\nvalue = [85, 1]"] ;
+35 -> 51
+51 [label="kurtosis < -4.483700000000001\ngini = 0.3495836160718843\nsamples = 472\nvalue = [441, 31]"] ;
+51 -> 52
+52 [label="kurtosis < -4.69065\ngini = 0.7918583525674836\nsamples = 21\nvalue = [5, 16]"] ;
+52 -> 53
+53 [label="entropy < -4.68445\ngini = 0.5435644431995964\nsamples = 16\nvalue = [2, 14]"] ;
+53 -> 54
+54 [label="1.0\ngini = 0.9182958340544896\nsamples = 3\nvalue = [1, 2]"] ;
+53 -> 55
+55 [label="1.0\ngini = 0.39124356362925566\nsamples = 13\nvalue = [1, 12]"] ;
+52 -> 56
+56 [label="kurtosis < -4.6251\ngini = 0.9709505944546686\nsamples = 5\nvalue = [3, 2]"] ;
+56 -> 57
+57 [label="0.0\ngini = 1.0\nsamples = 2\nvalue = [1, 1]"] ;
+56 -> 58
+58 [label="0.0\ngini = 0.9182958340544896\nsamples = 3\nvalue = [2, 1]"] ;
+51 -> 59
+59 [label="variance < 1.7438500000000001\ngini = 0.21048312539092928\nsamples = 451\nvalue = [436, 15]"] ;
+59 -> 60
+60 [label="kurtosis < -2.2859\ngini = 0.5957610966703236\nsamples = 90\nvalue = [77, 13]"] ;
+60 -> 61
+61 [label="variance < 0.840855\ngini = 0.6193821946787638\nsamples = 13\nvalue = [2, 11]"] ;
+61 -> 62
+62 [label="0.0\ngini = 1.0\nsamples = 2\nvalue = [1, 1]"] ;
+61 -> 63
+63 [label="1.0\ngini = 0.4394969869215134\nsamples = 11\nvalue = [1, 10]"] ;
+60 -> 64
+64 [label="entropy < 1.034255\ngini = 0.173781322679433\nsamples = 77\nvalue = [75, 2]"] ;
+64 -> 65
+65 [label="0.0\ngini = 0.10215803640865039\nsamples = 75\nvalue = [74, 1]"] ;
+64 -> 66
+66 [label="0.0\ngini = 1.0\nsamples = 2\nvalue = [1, 1]"] ;
+59 -> 67
+67 [label="variance < 2.0185\ngini = 0.049498871367848384\nsamples = 361\nvalue = [359, 2]"] ;
+67 -> 68
+68 [label="0.0\ngini = 0.20062232431271465\nsamples = 32\nvalue = [31, 1]"] ;
+67 -> 69
+69 [label="0.0\ngini = 0.029794662748215753\nsamples = 329\nvalue = [328, 1]"] ;
+}
