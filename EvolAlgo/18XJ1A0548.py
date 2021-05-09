@@ -62,14 +62,14 @@ def mutate(XY, popul, K, F):
 
 # performs crossover given mutant vector, parent vector and crossover probability
 def crossOver(mutant, parent, COProb):
-    x = np.random.rand()
-    y = np.random.rand()
+    rand1 = np.random.rand()
+    rand2 = np.random.rand()
     res = [0.0,0.0]
-    if (x <= COProb):
+    if (rand1 <= COProb):
         res[0] = mutant[0]
     else:
         res[0] = parent[0]
-    if (y <= COProb):
+    if (rand2 <= COProb):
         res[1] = mutant[1]
     else:
         res[1] = parent[1]
@@ -111,7 +111,7 @@ def differential_evolution(xy_ranges, objective, populationSize, genSize, K, F, 
     avgFitGen = [0.0 for j in range(genSize)]
     for i in range(genSize): # going over every generation
         for j in range(populationSize): # going over every vector in the population
-            parent = population[j]
+            parent = population[j] # [x,y]
             triVec = computeTrialVector(xy_ranges, parent, population, K, F, i, crossOverProb)
             triVecLoss = objective(triVec[0], triVec[1])
             parentLoss = objective(parent[0], parent[1])
