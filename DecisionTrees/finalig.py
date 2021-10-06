@@ -229,7 +229,7 @@ def k_fold_split(dataset, no_of_parts):
 
 def read(filename:str):
     try :
-        data = pd.read_csv(filename, header = None).values.tolist()
+        data = pd.read_csv(filename).values.tolist()
         if (data and type(data[0][0]) == str):
             try:
                 data = pd.read_csv(filename, header = None, sep=' ').values.tolist()
@@ -373,7 +373,8 @@ t1 = time()
 #     t3 = time()
 #     print("Depth =", i+3, "-->>")
 #decision_tree_algo('Sensorless_drive_diagnosis.txt', is_bagging = False, traintest_ratio = 0.1, min_bagged_splits=51, max_bagged_splits=51)
-decision_tree_algo('data_banknote_authentication.txt', is_bagging = False, traintest_ratio = 0.9, min_bagged_splits=2, max_bagged_splits=6)
+# decision_tree_algo('data_banknote_authentication.txt', is_bagging = False, traintest_ratio = 0.9, min_bagged_splits=2, max_bagged_splits=6)
+decision_tree_algo('heart.csv', is_bagging = False, traintest_ratio = 0.9, min_bagged_splits=2, max_bagged_splits=6)
     # t4 = time()
     # elapsed = t4 - t3
     # print("Time Taken Depth " + str(i+3) + ":", elapsed)

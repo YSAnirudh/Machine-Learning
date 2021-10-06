@@ -67,7 +67,7 @@ class DecisionAlgo:
                 #left.append([self._data[row][f_index], self._data[row][self._features]])
         return [left, right], [left_class,right_class]
 
-    def entropy_for_a_group(self, group, class):
+    def entropy_for_a_group(self, group, classes):
         classes_present, classes_count = np.unique(classes, return_counts = True)
         for i in range(len(classes_present)):
             
@@ -360,7 +360,7 @@ def decision_tree_algo(dataset_filename, is_bagging, traintest_ratio, min_bagged
 
 
 t1 = time()
-decision_tree_algo('data_banknote_authentication.txt', False, 0.5, 2, 8)
+decision_tree_algo('heart.csv', False, 0.5, 2, 8)
 #decision_tree_algo('Sensorless_drive_diagnosis.txt', False, 0.5)
 t2 = time()
 
